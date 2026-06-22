@@ -1,0 +1,70 @@
+#data
+<!doctype html><html><body><p>Hello</p></body></html>
+#errors
+simple-document
+#document
+| <!DOCTYPE html>
+| <html>
+|   <head>
+|   <body>
+|     <p>
+|       "Hello"
+
+#data
+<table><tr><td>Cell
+#errors
+table-implied-end-tags
+#document
+| <html>
+|   <head>
+|   <body>
+|     <table>
+|       <tbody>
+|         <tr>
+|           <td>
+|             "Cell"
+
+#data
+<svg><g><title>x</title></g></svg>
+#errors
+svg-namespace
+#document
+| <html>
+|   <head>
+|   <body>
+|     <svg svg>
+|       <g>
+|         <title>
+|           "x"
+
+#data
+<math><mi>x</mi><mo>+</mo><mi>y</mi></math>
+#errors
+mathml-namespace
+#document
+| <html>
+|   <head>
+|   <body>
+|     <math math>
+|       <mi>
+|         "x"
+|       <mo>
+|         "+"
+|       <mi>
+|         "y"
+
+#data
+<div><template><p>inside</p></template><p>outside</p></div>
+#errors
+template-content
+#document
+| <html>
+|   <head>
+|   <body>
+|     <div>
+|       <template>
+|         content
+|           <p>
+|             "inside"
+|       <p>
+|         "outside"

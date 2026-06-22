@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "aspose-html-foss"
+version = "0.1.0"
+description = "Open-source Python toolkit for HTML parsing, DOM manipulation, and serialization."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Aspose.HTML FOSS contributors"},
+]
+keywords = ["html", "dom", "parser", "css", "aspose"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+dependencies = [
+    "skia-python>=87.0,<145",
+]
+
+[project.optional-dependencies]
+js = ["quickjs>=1.19,<2"]
+test = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/aspose-html-foss/Aspose.HTML-FOSS-for-Python"
+Repository = "https://github.com/aspose-html-foss/Aspose.HTML-FOSS-for-Python"
+Issues = "https://github.com/aspose-html-foss/Aspose.HTML-FOSS-for-Python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
