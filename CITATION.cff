@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Aspose.HTML FOSS for Python
+message: If you use this software, please cite it using the metadata in this file.
+type: software
+authors:
+  - name: Aspose.HTML FOSS contributors
+repository-code: https://github.com/aspose-html-foss/Aspose.HTML-FOSS-for-Python
+url: https://github.com/aspose-html-foss/Aspose.HTML-FOSS-for-Python
+license: MIT
+version: 0.1.0
