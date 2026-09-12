@@ -65,9 +65,9 @@ flowchart TD
 
 ## Installation
 
-A PyPI package has not been published yet. Install from a source checkout by putting the source
-tree on `PYTHONPATH` directly — the same mechanism the repository's own test suite already relies
-on (`pyproject.toml`'s `[tool.pytest.ini_options]` sets `pythonpath = ["src"]`):
+Install from a source checkout by putting the source tree on `PYTHONPATH` directly — the same
+mechanism the repository's own test suite already relies on (`pyproject.toml`'s
+`[tool.pytest.ini_options]` sets `pythonpath = ["src"]`):
 
 ```bash
 git clone https://github.com/aspose-html-foss/Aspose.HTML-FOSS-for-Python.git
@@ -565,6 +565,7 @@ The primary entry point is `HTMLDocument`, which parses HTML into a `Document` t
 - **[How-to guides & FAQ](https://kb.aspose.org/html/python/)** — task-focused answers for common HTML/DOM/CSS-processing questions.
 - **[Full API reference](https://reference.aspose.org/html/python/)** — the complete, browsable reference for all 243 public types.
 - **[Public API surface](PUBLIC_API.md)** — the stable top-level entry points this library's compatibility guarantees cover.
+- **[Runnable examples](examples/)** — real, scenario-focused scripts beyond Quick Start.
 - **[Contributing guide](CONTRIBUTING.md)** — development setup, test commands, and contribution guidelines.
 - **[Security policy](SECURITY.md)** — how to report a vulnerability.
 - **[Changelog](CHANGELOG.md)** — notable changes to this package by version.
